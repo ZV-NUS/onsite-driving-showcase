@@ -1,0 +1,42 @@
+{
+  "release": "2026-10-30",
+  "evidence": "Selected recorded local simulation runs",
+  "processing": [
+    "Select five existing completed runs",
+    "Sample motion at approximately 0.5 s with endpoints retained",
+    "Translate origin and rotate axes independently for each scene",
+    "Round positions to 0.1 m, speed to 0.1 m/s, heading to 0.001 rad",
+    "Retain time, relative position, heading and speed for visual replay, with scene/object identifiers, dimensions, type labels and terminal-status metadata",
+    "Omit global map coordinates, raw CSVs, maps, planner code and full evaluation logs"
+  ],
+  "environment": "Moving/static objects use sampled observations from the same runs. Road/background geometry is schematic. Missing observations are not extrapolated.",
+  "scores": "No official scores, leaderboard positions or overall competition success rates are claimed.",
+  "selection": "Five selected completed local runs; not an exhaustive evaluation.",
+  "scene_summaries": [
+    {
+      "scene": "B306_mission_0_8_5",
+      "duration_s": 16.0,
+      "end_status": 4
+    },
+    {
+      "scene": "dapai_intersection_2_3_4",
+      "duration_s": 21.9,
+      "end_status": 4
+    },
+    {
+      "scene": "jiangtong_intersection_7_2_1",
+      "duration_s": 28.0,
+      "end_status": 4
+    },
+    {
+      "scene": "shovel_loading_1",
+      "duration_s": 122.4,
+      "end_status": 4
+    },
+    {
+      "scene": "shovel_loading_2",
+      "duration_s": 123.8,
+      "end_status": 4
+    }
+  ]
+}
